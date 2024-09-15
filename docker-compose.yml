@@ -1,0 +1,9 @@
+version: '3'
+services:
+  rpi4-emulator:
+    build: .
+    container_name: rpi4-emulator
+    volumes:
+      - ./rpi:/rpi
+    command: /bin/bash
+    tty: true
